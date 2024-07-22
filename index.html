@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="my"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>တောင်ပေါ်သား ရှမ်းကိုးမီး</title>
+    <link rel="stylesheet" href="css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </noscript>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 0 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .lead {
+            font-size: 1.25em;
+            margin-bottom: 1em;
+        }
+        .contact-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            align-items: center;
+        }
+        .contact-icons a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            width: 200px;
+        }
+        .contact-icons .viber {
+            background-color: #665cac;
+        }
+        .contact-icons .telegram {
+            background-color: #0088cc;
+        }
+        @media (min-width: 768px) {
+            .contact-icons {
+                flex-direction: row;
+            }
+        }
+        .phone-number {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .copy-icon {
+            cursor: pointer;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function copyToClipboard(text) {
+                navigator.clipboard.writeText(text).then(function() {
+                    alert('Copied to clipboard: ' + text);
+                }, function(err) {
+                    console.error('Could not copy text: ', err);
+                });
+            }
+
+            document.querySelectorAll('.copy-icon').forEach(function(icon) {
+                icon.addEventListener('click', function() {
+                    copyToClipboard(this.previousElementSibling.textContent);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>တောင်ပေါ်သား ရှမ်းကိုးမီး</h2>
+    <p class="lead">အောက်ပါ Viber သို့မဟုတ် Telegram က‌နေဆက်သွယ်လိုက်ပါ </p>
+    
+    <div class="contact-icons">
+        <a href="https://invite.viber.com/?g2=AQAfJJisrLRYw1M2OQDaloFjXK5Pd6UkM%2Fom1ploJxv%2B%2BTyGgBG5uOugAQfydlgZ" target="_blank" class="viber">
+            Viber
+        </a>
+
+<img id="icon" src="images/icon.png">
+
+        <a href="https://t.me/shweshankoemeeskmaung_bot" target="_blank" class="telegram">
+            Telegram
+        </a>
+    </div>
+    <p>Viberခလုတ်နှိပ်မရပါက Telegramဖြင့်ဆက်သွယ်ပေးပါရှင့်</p>
+    <h4>သို့မဟုတ် Viber Phone</h4>
+    <div>
+        <div class="phone-number">
+            <span>09 894870780</span>
+            <i class="fas fa-copy copy-icon"></i>
+        </div>
+        <hr>
+        <div class="phone-number">
+            <span>09 422189743</span>
+            <i class="fas fa-copy copy-icon"></i>
+        </div>
+        <hr>
+        <div class="phone-number">
+            <span>09 675430570</span>
+            <i class="fas fa-copy copy-icon"></i>
+        </div>
+        <hr>
+    </div>
+
+
+</body></html>
